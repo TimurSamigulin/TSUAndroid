@@ -25,8 +25,4 @@ class ViewModelDetailsActivity(application: Application): AndroidViewModel(appli
     fun updateRating(id: Long, rating: Float) = viewModelScope.launch(Dispatchers.IO) {
         repository.updateRating(id, rating)
     }
-
-    /*fun getElementById(id: Long) = viewModelScope.launch(Dispatchers.IO){
-        element = repository.getElementById(id)
-    }*/
 }

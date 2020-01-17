@@ -13,9 +13,6 @@ interface ElementDAO {
     @Insert
     suspend fun insert(element: Element)
 
-    @Insert
-    suspend fun insertElements(elements: List<Element>)
-
     @Update
     suspend fun updateElement(element: Element)
 
@@ -24,9 +21,6 @@ interface ElementDAO {
 
     @Query("SELECT * FROM element")
     fun getAllElements(): LiveData<List<Element>>
-
-    /*@Query("SELECT * FROM element WHERE id = :id")
-    suspend fun getElementById(id: Long): LiveData<Element>*/
 
     @Query("UPDATE element SET rating = :rating WHERE id = :id")
     suspend fun updateRating(id: Long, rating: Float)

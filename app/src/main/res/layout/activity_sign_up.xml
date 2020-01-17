@@ -10,14 +10,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="22sp"
-        android:text="Регистрация"/>
+        android:text="Введите новый пароль"/>
 
-    <EditText
-        android:id="@+id/sign_up_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:hint="Логин"/>
 
     <EditText
         android:id="@+id/sign_up_password"
@@ -29,12 +23,6 @@
     <Button
         android:id="@+id/sign_up_registration"
         android:text="Зарегистрироваться"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:id="@+id/sign_up_auth"
-        android:text="Авторизоваться"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </LinearLayout>

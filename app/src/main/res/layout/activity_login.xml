@@ -9,12 +9,11 @@
         android:textSize="22sp"
         android:text="Авторизация"/>
 
-    <EditText
-        android:id="@+id/login_login"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:hint="Логин"/>
+        android:gravity="center"
+        android:text="Введите пароль или приложите палец"/>
 
     <EditText
         android:id="@+id/login_password"
@@ -23,22 +22,25 @@
         android:inputType="textPassword"
         android:hint="Пароль"/>
 
+    
+    <ImageView
+        android:id="@+id/imageFinger"
+        android:src="@drawable/ic_fingerprint"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
     <Button
         android:id="@+id/login_auth"
         android:text="Войти"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:id="@+id/login_registration"
-        android:text="Регистрация"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
 
     <Button
         android:id="@+id/login_reset_password"
         android:text="Стереть пароль"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"/>
 </LinearLayout>

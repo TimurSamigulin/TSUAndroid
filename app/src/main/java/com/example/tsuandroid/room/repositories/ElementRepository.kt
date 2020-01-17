@@ -25,9 +25,4 @@ class ElementRepository(private val elementDAO: ElementDAO) {
     suspend fun updateRating(id: Long, rating: Float) {
         elementDAO.updateRating(id, rating)
     }
-
-    /*@WorkerThread
-    suspend fun getElementById(id: Long): LiveData<Element> {
-        return elementDAO.getElementById(id)
-    }*/
 }

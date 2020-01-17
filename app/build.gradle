@@ -12,16 +12,25 @@ android {
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.example.tsuandroid"
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            buildConfigField "String", "API_URL", '"el.json"'
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "API_URL", '"el.json"'
+            debuggable = true
+        }
+        staging {
+            buildConfigField "String", "API_URL", '"actors.json"'
+            signingConfig signingConfigs.debug
         }
     }
 }

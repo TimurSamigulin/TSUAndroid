@@ -34,21 +34,6 @@ class DetailsActivity: AppCompatActivity() {
         val intent: Intent = intent
         val elementId = intent.getLongExtra("EXTRA_ID", 0)
 
-        /*val element = model.element
-
-        element.observe(this, Observer {
-            element ->
-                textViewName.text = element.name
-                textViewDescription.text = element.description
-                textViewRating.text = String.format("%f", element.rating)
-
-                Glide.with(this)
-                    .load(element.icon)
-                    .override(500, 500)
-                    .fitCenter()
-                    .error(R.drawable.no_image)
-                    .into(imageViewImage)
-        })*/
 
         textViewName.text = intent.getStringExtra("EXTRA_NAME")
         textViewDescription.text = intent.getStringExtra("EXTRA_DESCRIPTION")

@@ -41,8 +41,6 @@ class MainActivity : AppCompatActivity() {
 
         model = ViewModelProviders.of(this).get(ViewModelMainActivity::class.java)
 
-        //model.insert(Element(id = null, name = "Putin", description = "Ura", icon = "Ura", rating = 5.0f))
-
         model.count.observe(this, Observer {
             val textView : TextView = findViewById(R.id.element_count)
             val plural: String = this.resources.getQuantityString(R.plurals.plurals_1, it, it)
