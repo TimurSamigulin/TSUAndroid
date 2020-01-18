@@ -9,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="22sp"
+        android:textColor="#F5F5F5"
+        android:textSize="20sp"
         android:text="Введите новый пароль"/>
 
 
@@ -23,6 +24,11 @@
     <Button
         android:id="@+id/sign_up_registration"
         android:text="Зарегистрироваться"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textStyle="normal"
+        android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content"/>
 </LinearLayout>

@@ -27,7 +27,7 @@ class ElementAdapter(): RecyclerView.Adapter<ElementAdapter.ElementHolder>() {
     override fun onBindViewHolder(holder: ElementHolder, position: Int) {
         val currentElement: Element = elements.get(position)
         holder.textViewName.text = currentElement.name
-        holder.textViewRating.text = String.format("%f", currentElement.rating)
+        holder.textViewRating.text = String.format("%.1f", currentElement.rating)
         Glide.with(holder.imageView)
             .load(currentElement.icon)
             .into(holder.imageView)

@@ -10,10 +10,11 @@
 
     <TextView
         android:id="@+id/element_count"
+        android:textColor="#F5F5F5"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:layout_gravity="end"/>
+        android:textAlignment="center"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/element_recycler_view"

@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="#F5F5F5"
         android:gravity="center"
-        android:textSize="22sp"
+        android:textSize="26sp"
         android:text="Авторизация"/>
 
     <TextView
         android:layout_width="match_parent"
+        android:textColor="#F5F5F5"
+        android:textSize="20sp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Введите пароль или приложите палец"/>
@@ -25,19 +30,21 @@
     
     <ImageView
         android:id="@+id/imageFinger"
-        android:src="@drawable/ic_fingerprint"
+        android:src="@drawable/ic_fingerprint_light"
         android:layout_gravity="center"
         android:layout_width="100dp"
         android:layout_height="100dp"/>
 
     <Button
         android:id="@+id/login_auth"
+        android:textColor="#F5F5F5"
         android:text="Войти"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"/>
 
     <Button
+        android:textColor="#F5F5F5"
         android:id="@+id/login_reset_password"
         android:text="Стереть пароль"
         android:layout_width="match_parent"

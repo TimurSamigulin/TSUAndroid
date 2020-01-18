@@ -37,7 +37,7 @@ class DetailsActivity: AppCompatActivity() {
 
         textViewName.text = intent.getStringExtra("EXTRA_NAME")
         textViewDescription.text = intent.getStringExtra("EXTRA_DESCRIPTION")
-        textViewRating.text = String.format("%f", intent.getFloatExtra("EXTRA_RATING", 0f))
+        textViewRating.text = String.format("%.1f", intent.getFloatExtra("EXTRA_RATING", 0f))
 
         Glide.with(this)
             .load(intent.getStringExtra("EXTRA_IMAGE"))
@@ -52,7 +52,7 @@ class DetailsActivity: AppCompatActivity() {
             if (rating <= 4.5f) {
                 Log.d("q", rating.toString())
                 rating += 0.5f
-                textViewRating.text = String.format("%f", rating)
+                textViewRating.text = String.format("%.1f", rating)
                 model.updateRating(elementId, rating)
             }
         }
@@ -63,7 +63,7 @@ class DetailsActivity: AppCompatActivity() {
             if (rating >= 0.5f) {
                 rating -= 0.5f
                 Log.d("q", rating.toString())
-                textViewRating.text = String.format("%f", rating)
+                textViewRating.text = String.format("%.1f", rating)
                 model.updateRating(elementId, rating)
             }
         }

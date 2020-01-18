@@ -3,11 +3,11 @@
     <string name="element_name">Картинка</string>
 
     <plurals name="plurals_1">
-        <item quantity="zero">%1$d политиков</item>
-        <item quantity="one">%1$d политик</item>
-        <item quantity="two">%1$d политика</item>
-        <item quantity="few">%1$d политика</item>
-        <item quantity="many">%1$d политиков</item>
-        <item quantity="other">%1$d политиков</item>
+        <item quantity="zero">%1$d котов</item>
+        <item quantity="one">%1$d кот</item>
+        <item quantity="two">%1$d кота</item>
+        <item quantity="few">%1$d кота</item>
+        <item quantity="many">%1$d котов</item>
+        <item quantity="other">%1$d котов</item>
     </plurals>
 </resources>

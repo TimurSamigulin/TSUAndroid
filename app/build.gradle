@@ -20,16 +20,16 @@ android {
     }
     buildTypes {
         debug {
-            buildConfigField "String", "API_URL", '"el.json"'
+            buildConfigField "String", "API_URL", '"cats.json"'
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "API_URL", '"el.json"'
+            buildConfigField "String", "API_URL", '"cats.json"'
             debuggable = true
         }
         staging {
-            buildConfigField "String", "API_URL", '"actors.json"'
+            buildConfigField "String", "API_URL", '"dogs.json"'
             signingConfig signingConfigs.debug
         }
     }
